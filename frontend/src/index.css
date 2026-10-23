@@ -1,0 +1,72 @@
+
+@import "tailwindcss";
+
+/* Job Portal Design System */
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+
+  --color-surface: #ffffff;
+  --color-page: #f8fafc;
+}
+
+/* Global Styles */
+
+:root {
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-page);
+  color: #0f172a;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Accessible Keyboard Navigation */
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-600);
+  outline-offset: 3px;
+}
+
+/* Text Selection */
+
+::selection {
+  background-color: #bfdbfe;
+  color: #1e3a8a;
+}
